@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6043e22.chunk.css",
-    "main.js": "/static/js/main.c774c9fa.chunk.js",
-    "main.js.map": "/static/js/main.c774c9fa.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.ee53ab17.js",
-    "runtime~main.js.map": "/static/js/runtime~main.ee53ab17.js.map",
-    "static/js/2.78dae8c9.chunk.js": "/static/js/2.78dae8c9.chunk.js",
-    "static/js/2.78dae8c9.chunk.js.map": "/static/js/2.78dae8c9.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b669ee99ce050ccd59f77f0f0ebaeb9e.js": "/precache-manifest.b669ee99ce050ccd59f77f0f0ebaeb9e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f6043e22.chunk.css.map": "/static/css/main.f6043e22.chunk.css.map",
-    "static/media/burgerbuilder.png": "/static/media/burgerbuilder.76602798.png",
-    "static/media/email.png": "/static/media/email.42424779.png",
-    "static/media/journeyplanner.png": "/static/media/journeyplanner.c3851440.png"
+    "main.css": "/portfolio/static/css/main.f6043e22.chunk.css",
+    "main.js": "/portfolio/static/js/main.4f97f37e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4f97f37e.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.75d78480.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.75d78480.js.map",
+    "static/js/2.78dae8c9.chunk.js": "/portfolio/static/js/2.78dae8c9.chunk.js",
+    "static/js/2.78dae8c9.chunk.js.map": "/portfolio/static/js/2.78dae8c9.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.151324a3d6949705d1ecf5db88718243.js": "/portfolio/precache-manifest.151324a3d6949705d1ecf5db88718243.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.f6043e22.chunk.css.map": "/portfolio/static/css/main.f6043e22.chunk.css.map",
+    "static/media/burgerbuilder.png": "/portfolio/static/media/burgerbuilder.76602798.png",
+    "static/media/email.png": "/portfolio/static/media/email.42424779.png",
+    "static/media/journeyplanner.png": "/portfolio/static/media/journeyplanner.c3851440.png"
   }
 }
