@@ -1,0 +1,169 @@
+.Contact {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(to right,#FF5F6D, #FFC371);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    .Content {
+        width: 80vw;
+        height: 80vh;
+        margin-top: 7vh;
+
+        background-color: white;
+        border-radius: 60px;
+        
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+
+        .Promo {
+            font-family: 'Lexend Deca';
+            font-size: 2.5vw;
+            font-weight: 200;
+            color: #525252;
+
+            padding: 6vh 0 3vh;            
+        }
+
+        .Description {
+            font-family: 'Lexend Deca';
+            font-size: 1.75vh;
+    
+            padding: 4vh 0 6vh;
+    
+            width: 35vw;
+            
+            color: #525252;
+    
+            letter-spacing: 1px;
+            line-height: 1.5vw;
+            text-align: center;
+        }
+
+        .Email {
+            width: 25%;
+            height: 11vh;
+            border-radius: 80px;
+            border: 3px solid #FF5F6D;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: 'Lexend Deca';
+            font-size: 2vw;
+            color: #525252;
+            text-decoration: none;
+
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: #FF5F6D;
+                color: white;
+            }
+        }
+
+        .Social {
+            display: flex;
+            justify-content: space-around;
+
+            ul {
+                list-style: none;
+                margin: 0 2vw;
+
+                li {                    
+                    display: flex;
+                    align-items: center;
+                    flex-flow: column;
+
+                    a {
+                        $size: 8vh;
+                        height: $size;
+                        width: $size;
+                        border-radius: 80px;
+                        border: 2px solid #FF5F6D;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-flow: column;
+
+                        transition: all 0.1s;
+
+                        &:hover {
+                            background-color: #FF5F6D;
+                        }
+                        
+                        img {
+                            height: 50%;
+                            width: 50%;
+                            filter: brightness(0.3);
+                        }
+                    }
+
+                    p {
+                        font-family: 'Lexend Deca';
+                        font-size: 1.2vw;
+                        color: #131313;
+                        margin-top: 2vh;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .Contact {
+        .Content {
+            width: 90vw;
+            height: 70vh;
+
+            .Promo {            
+                font-size: 3vh;
+                text-align: center;
+                width: 80%;
+            }
+
+            .Description {
+                width: 80vw;
+                padding: 3vh 0 4vh;
+                font-size: 1.6vh;
+                line-height: 2vh;
+                width: 80%;
+            }
+
+            .Email {
+                height: 9vh;
+                width: 60%;
+                font-size: 3.5vh;
+            }   
+
+            .Social {                
+                ul {
+                    margin: 0 3vw;
+
+                    li {
+                        a {
+                            $size: 14vw;
+                            height: $size;
+                            width: $size;
+                        }
+
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,162 @@
+.Project {
+    width: 80vw;
+    height: 25vw;
+    background-image: linear-gradient(to right,#FF5F6D, #FFC371);
+    border-radius: 80px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 4vh 0;
+    $size: 20vw;
+
+    transition: all 0.3s;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+    
+    .Icon {
+        width: $size;
+        height: $size;
+
+        margin-left: 4vw;
+
+        img {
+            border-radius: 500px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            height: $size;
+            width: $size;
+
+            transition: all 0.2s;
+            
+            &:hover {
+                
+                filter: brightness(0.85);
+            }
+        }
+    }
+
+    .Info {
+        height: 80%;
+        width: calc(#{$size} * 0.8);
+        border-radius: 40px;
+
+        h1, p, a {
+            font-family: 'Lexend Deca';
+            color: #525252;
+            width: 80%;
+            margin: 0 auto;    
+            padding-top: 1vw;        
+            display: block;
+        }
+
+        h1 {
+            font-size: 1.75vw;     
+            font-weight: 200;
+            padding-top: 1.5vw;   
+        }
+
+        p {
+            font-size: 1vw;
+            line-height: 1.25vw;
+            letter-spacing: 1px;
+        }
+
+        .Link {
+            font-size: 1.1vw;
+            text-transform: uppercase;
+            text-decoration: none;
+            line-height: 1vw;
+            color: #050031;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .Built {
+        background-color: white;
+
+        ul {
+            list-style-position: inside;
+            width: 90%;
+            margin: 1vw 1.5vw;
+
+            li {
+                span {
+                    position: relative;
+                    left: -5px;
+
+                    .Tool {            
+                        font-family: 'Lexend Deca';
+                        font-size: 1.15vw;
+                        letter-spacing: 0px;
+            
+                        color: #525252;
+            
+                        display: inline-block;
+                        padding-top: 0.3vw;            
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .Project {        
+        height: auto;
+        width: 90vw;
+        flex-flow: column;
+        
+        .Icon {
+            $size: 50vw;
+            width: $size;
+            height: $size;
+            margin: 5vh auto 5vh;
+
+            img {
+                width: $size;
+                height: $size;
+            }
+
+        }
+
+        .Info {
+            width: 100%;
+            height: 18.5vh;
+            padding-bottom: 5vh;
+
+            h1 {
+                font-size: 4vh;
+                text-align: center;
+                padding: 0 0 0.5vh; 
+            }
+
+            p {
+                font-size: 1.6vh;
+                line-height: 2.25vh;
+                padding: 1.5vh 0;
+                text-align: center;
+            }
+            
+            .Link {
+                font-size: 2.25vh;
+                text-align: center;
+                
+                padding-top: 1vh;
+                line-height: 3vh;
+            }
+        }
+        
+        .Built {
+            display: none;
+        }
+    }
+}

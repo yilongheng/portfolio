@@ -1,0 +1,200 @@
+.Navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  height: 15vh;
+  width: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: slideIn 1.5s 2s ease-out forwards;
+          animation: slideIn 1.5s 2s ease-out forwards;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.Navigation .Sections {
+  list-style: none;
+  padding-right: 4vw;
+}
+
+.Navigation .Sections li {
+  display: inline-block;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.Navigation .Sections li a {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 2vh;
+  color: white;
+  margin-left: 4vw;
+  padding: 4px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.Navigation .Sections li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.Navigation .Sections li .Contact {
+  border: 2px solid white;
+  border-radius: 16px;
+  padding: 8px 25px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Navigation .Sections li .Contact:hover {
+  color: #444444;
+  background-color: white;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
+    width: 0vw;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    width: 0vw;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.Scrolled {
+  height: 10vh;
+  background-color: rgba(54, 54, 54, 0.75);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Hamburger {
+  display: none;
+}
+
+.Module {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .Navigation {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 12vh;
+  }
+  .Navigation .Sections {
+    display: none;
+  }
+  .Scrolled {
+    height: 9vh;
+  }
+  .Module {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    bottom: 0;
+    background-color: rgba(54, 54, 54, 0.75);
+  }
+  .Module .Sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .Module .Sections li a {
+    margin-left: 0;
+  }
+  .NavBar {
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .Scroll {
+    height: 9vh;
+  }
+  .NotScroll {
+    height: 12vh;
+  }
+  .Hamburger {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    right: 5vw;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Hamburger img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=Navigation.module.css.map */

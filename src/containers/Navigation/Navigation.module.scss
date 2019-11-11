@@ -1,0 +1,176 @@
+.Navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+
+    height: 15vh;
+    width: 0;
+    
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation: slideIn 1.5s 2s ease-out forwards;
+    transition: 0.2s;
+    
+    .Sections {
+        list-style: none;
+        padding-right: 4vw;
+
+        li {            
+            display: inline-block;
+            overflow: hidden;
+            padding: 20px 0;
+            
+            a {
+                font-family: 'Lexend Deca', sans-serif;
+                font-size: 2vh;
+                color: white;
+
+                margin-left: 4vw;
+                padding: 4px 0;
+
+                text-decoration: none;
+                text-transform: uppercase;
+
+                transition: all 0.2s;
+
+                &:hover {
+                    border-bottom: 2px solid white;
+                }
+            }
+
+            .Contact {
+                border: 2px solid white;
+                border-radius: 16px;
+                padding: 8px 25px;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: #444444;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        width: 0vw;
+    }
+
+    to {
+        opacity: 1;
+        width: 100%;
+    }            
+}
+
+.Scrolled {
+    height: 10vh;
+    background-color: rgba(54, 54, 54, 0.75);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Hamburger {
+    display: none;
+}
+
+.Module {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .Navigation {
+        justify-content: center;
+        height: 12vh;
+
+        .Sections {
+            display: none;
+        }
+    }
+    
+    .Scrolled {
+        height: 9vh;
+    }
+    
+    .Module {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        bottom: 0;
+
+        background-color: rgba(54, 54, 54, 0.75);
+        
+        .Sections {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+            transform: scale(1.2);
+
+            li {
+                a {                    
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .NavBar {
+        position: absolute;
+        top: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw;
+
+        transition: all 0.2s;
+    }
+    
+    .Scroll {
+        height: 9vh;
+    }
+
+    .NotScroll {
+        height: 12vh;
+    }
+
+    .Hamburger {
+        display: block;
+
+        position: absolute;
+        background-color: transparent;
+        outline: none;
+        border: none;
+
+        cursor: pointer;
+
+        z-index: 100;
+        right: 5vw;
+
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+ 
+}

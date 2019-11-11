@@ -1,0 +1,47 @@
+.Skills {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,#FF5F6D, #FFC371);
+
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    .Description {
+        font-family: 'Lexend Deca';
+        font-size: 1.75vh;
+
+        padding: 18vh 0 10vh;
+
+        width: 40vw;
+        
+        color: white;
+
+        letter-spacing: 1px;
+        line-height: 2.5vh;
+        text-align: center;
+    }
+
+    .Cards {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 20vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Skills {
+        .Description {
+            width: 80vw;
+            padding: 14vh 0 6vh;
+        }
+
+        .Cards {
+            display: block;
+        }
+    }
+}

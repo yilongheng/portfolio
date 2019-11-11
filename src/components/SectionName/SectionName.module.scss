@@ -1,0 +1,31 @@
+.Section {
+    position: absolute;
+    top: -10vh;
+
+    width: 32vw;
+    height: 20vh;
+
+    background-color: white;
+    border-radius: 100px;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {        
+        font-family: 'Lexend Deca';
+        font-size: 5vh;
+        color: #525252;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Section {
+        width: 90vw;
+        height: 15vh;
+
+        top: -7.5vh;
+    }
+}

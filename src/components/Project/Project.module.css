@@ -1,0 +1,155 @@
+.Project {
+  width: 80vw;
+  height: 25vw;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF5F6D), to(#FFC371));
+  background-image: linear-gradient(to right, #FF5F6D, #FFC371);
+  border-radius: 80px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 4vh 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Project:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+.Project .Icon {
+  width: 20vw;
+  height: 20vw;
+  margin-left: 4vw;
+}
+
+.Project .Icon img {
+  border-radius: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20vw;
+  width: 20vw;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.Project .Icon img:hover {
+  -webkit-filter: brightness(0.85);
+          filter: brightness(0.85);
+}
+
+.Project .Info {
+  height: 80%;
+  width: calc(20vw * 0.8);
+  border-radius: 40px;
+}
+
+.Project .Info h1, .Project .Info p, .Project .Info a {
+  font-family: 'Lexend Deca';
+  color: #525252;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1vw;
+  display: block;
+}
+
+.Project .Info h1 {
+  font-size: 1.75vw;
+  font-weight: 200;
+  padding-top: 1.5vw;
+}
+
+.Project .Info p {
+  font-size: 1vw;
+  line-height: 1.25vw;
+  letter-spacing: 1px;
+}
+
+.Project .Info .Link {
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1vw;
+  color: #050031;
+}
+
+.Project .Info .Link:hover {
+  text-decoration: underline;
+}
+
+.Project .Built {
+  background-color: white;
+}
+
+.Project .Built ul {
+  list-style-position: inside;
+  width: 90%;
+  margin: 1vw 1.5vw;
+}
+
+.Project .Built ul li span {
+  position: relative;
+  left: -5px;
+}
+
+.Project .Built ul li span .Tool {
+  font-family: 'Lexend Deca';
+  font-size: 1.15vw;
+  letter-spacing: 0px;
+  color: #525252;
+  display: inline-block;
+  padding-top: 0.3vw;
+}
+
+@media (max-width: 1024px) {
+  .Project {
+    height: auto;
+    width: 90vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .Project .Icon {
+    width: 50vw;
+    height: 50vw;
+    margin: 5vh auto 5vh;
+  }
+  .Project .Icon img {
+    width: 50vw;
+    height: 50vw;
+  }
+  .Project .Info {
+    width: 100%;
+    height: 18.5vh;
+    padding-bottom: 5vh;
+  }
+  .Project .Info h1 {
+    font-size: 4vh;
+    text-align: center;
+    padding: 0 0 0.5vh;
+  }
+  .Project .Info p {
+    font-size: 1.6vh;
+    line-height: 2.25vh;
+    padding: 1.5vh 0;
+    text-align: center;
+  }
+  .Project .Info .Link {
+    font-size: 2.25vh;
+    text-align: center;
+    padding-top: 1vh;
+    line-height: 3vh;
+  }
+  .Project .Built {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Project.module.css.map */

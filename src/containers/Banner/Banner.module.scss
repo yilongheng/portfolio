@@ -1,0 +1,221 @@
+.Background {
+    background-color: white;
+    min-height: 110vh;
+    position: relative;
+    width: 100%;
+
+    .RightSlide {
+        background-image: linear-gradient(to right,#FF5F6D, #FFC371);
+        position: absolute;
+        right: 0;
+        height: 100%;
+        animation: slideIn 1.5s ease-out forwards;
+    }
+
+    @keyframes slideIn {
+        from { width: 0%; }
+        to { width: 60%; }
+    }
+
+    .Welcome {
+        position: absolute;  
+        z-index: 200;
+
+        width: 100%;  
+        padding-top: 10vh;
+
+        display: flex;
+        justify-content: center;    
+
+        overflow-x: hidden;
+
+        h1 {
+            font-family: 'Teko', sans-serif;
+            text-transform: uppercase;
+            font-size: 16.5vw;
+            font-weight: 900;
+            letter-spacing: 0px;
+            display: inline-flex;
+        }
+
+        .Hey {
+            background-image: linear-gradient(to left,#FF5F6D, #FFC371);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-right: 15px;
+            transform: translateX(0);
+            animation: heyIn 1.5s ease-out forwards;
+            z-index: 200;
+        }
+        
+        @keyframes heyIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        } 
+
+        .There {
+            color: white;
+            letter-spacing: -10px;
+            margin-left: 15px;
+            transform: translateX(200%);
+            animation: thereIn 2s 0.75s ease-out forwards;
+        }
+        
+        @keyframes thereIn {
+            0% { transform: translateX(-175%); }
+            100% { transform: translateX(0); }
+        }
+    }
+
+    .Bio {
+        position: absolute;
+        bottom: 32vh;
+        right: 4vw;
+
+        width: 55%;
+
+        opacity: 0;
+        animation: bio 1s 2.5s ease-out forwards;
+
+        h2, p {
+            font-family: 'Lexend Deca', sans-serif;
+            color: white;
+            text-align: right;
+        }
+
+        h2 {
+            font-size: 6vh;
+        }
+
+        p {
+            font-size: 2.7vh;
+            padding-top: 4vh;
+        }
+    }
+
+    @keyframes bio {
+        from {
+            opacity: 0;
+            bottom: 32vh;
+        }
+
+        to {
+            opacity: 1;
+            bottom: 28vh;
+        }            
+    }
+
+    .Scroll {
+        $size: 5vh;
+
+        position: absolute;
+        bottom: 6vh;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: $size;
+        height: $size;
+
+        border: 2px solid white;
+        border-radius: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 400;
+        opacity: 0;
+
+        animation: scroll 1s 3.25s ease-out forwards;
+
+        .Arrow {
+            margin-top: 5px;
+            width: 0; 
+            height: 0; 
+            border-left: 1vh solid transparent;
+            border-right: 1vh solid transparent;
+            
+            border-top: 1vh solid white;
+        }
+
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: white;
+
+            .Arrow {
+                border-top: 0.5vw solid yellow;
+            }
+        }
+    }
+
+    @keyframes scroll {
+        from {
+            opacity: 0;
+            bottom: 18vh;
+        }
+
+        to {
+            opacity: 1;
+            bottom: 14vh;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .Background {        
+        display: block;
+        background-image: linear-gradient(to left,#FF5F6D, #FFC371);
+
+        .RightSlide {
+            display: none;
+        }
+
+        .Welcome {
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                overflow: hidden;
+                line-height: 20vh;
+                letter-spacing: 0px;
+                font-weight: 900;
+            }
+
+            .Hey {
+                color: white;
+                background-image: linear-gradient(to left, white, white);
+                font-size: 22vh;
+                margin: 2vh 0 1vh;
+                letter-spacing: -5px;
+            }
+            
+            .There {
+                color: white;
+                font-size: 14.5vh;
+                letter-spacing: -10px;
+                margin: 0;
+            }
+        }
+
+        .Bio {
+            display: block;
+            width: 90vw;            
+            height: 30vh;
+
+            bottom: 0;
+            right: 5vw;
+            
+            h2 {
+                font-size: 4.25vh;
+                padding-top: 4vw;
+            }
+
+            p {
+                font-size: 2.25vh;
+            }
+        }
+
+    }
+}
