@@ -1,8 +1,8 @@
 import React from 'react';
 
-import classes from './SectionName.module.css';
+import classes from './Section.module.scss';
 
-const sectionName = (props) => {
+const section = (props) => {
     return (
     	<div className = { classes.Section } {...props}>
             <h1>{ props.name }</h1>    		
@@ -10,4 +10,4 @@ const sectionName = (props) => {
     );
 }
 
-export default sectionName;
+export default section;

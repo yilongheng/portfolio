@@ -2,7 +2,7 @@ import React from 'react';
 
 import Line from '../Line/Line';
 
-import classes from './Card.module.css';
+import classes from './Card.module.scss';
 
 const card = (props) => {
     return (

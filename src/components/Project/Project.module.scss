@@ -2,6 +2,7 @@
     width: 80vw;
     height: 25vw;
     background-image: linear-gradient(to right,#FF5F6D, #FFC371);
+    filter: grayscale(0.35);
     border-radius: 80px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
@@ -12,10 +13,12 @@
     margin: 4vh 0;
     $size: 20vw;
 
-    transition: all 0.3s;
+    transition: all 0.25s;
 
     &:hover {
         transform: scale(1.025);
+        filter: none;
+        background-image: linear-gradient(to right,#FF5F6D, #FFC371);
     }
     
     .Icon {
@@ -72,7 +75,7 @@
             text-transform: uppercase;
             text-decoration: none;
             line-height: 1vw;
-            color: #050031;
+            color: white;
 
             &:hover {
                 text-decoration: underline;

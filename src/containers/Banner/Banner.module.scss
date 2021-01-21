@@ -38,14 +38,21 @@
             display: inline-flex;
         }
 
-        .Hey {
-            background-image: linear-gradient(to left,#FF5F6D, #FFC371);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-right: 15px;
-            transform: translateX(0);
-            animation: heyIn 1.5s ease-out forwards;
-            z-index: 200;
+        .HeyBox {
+            width: 40%;
+            text-align: right;
+            
+            .Hey {
+                background-image: linear-gradient(to left,#FF5F6D, #FFC371);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                margin-right: 10px;
+
+                transform: translateX(0);
+                animation: heyIn 1.5s ease-out forwards;
+                z-index: 200;
+            }
         }
         
         @keyframes heyIn {
@@ -53,12 +60,20 @@
             100% { transform: translateX(0); }
         } 
 
-        .There {
-            color: white;
-            letter-spacing: -10px;
-            margin-left: 15px;
-            transform: translateX(200%);
-            animation: thereIn 2s 0.75s ease-out forwards;
+        .ThereBox {
+            width: 60%;
+            text-align: left;
+            overflow: hidden;
+
+            .There {
+                letter-spacing: -10px;
+                color: white;
+
+                margin-left: 10px;
+
+                transform: translateX(200%);
+                animation: thereIn 2s 0.75s ease-out forwards;
+            }
         }
         
         @keyframes thereIn {
@@ -183,19 +198,30 @@
                 font-weight: 900;
             }
 
-            .Hey {
-                color: white;
-                background-image: linear-gradient(to left, white, white);
-                font-size: 22vh;
-                margin: 2vh 0 1vh;
-                letter-spacing: -5px;
+            .HeyBox {
+                width: 90vw;
+                text-align: right;
+
+                .Hey {
+                    color: white;
+                    background-image: none;
+                    -webkit-text-fill-color: initial;
+                    font-size: 21vh;
+                    margin: 2vh 0 1vh;
+                    letter-spacing: -5px;
+                }
             }
             
-            .There {
-                color: white;
-                font-size: 14.5vh;
-                letter-spacing: -10px;
-                margin: 0;
+            .ThereBox {
+                width: 90vw;
+                text-align: right;
+
+                .There {
+                    color: white;
+                    font-size: 13.5vh;
+                    letter-spacing: -10px;
+                    margin: 0;
+                }
             }
         }
 

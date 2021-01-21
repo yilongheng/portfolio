@@ -1,13 +1,13 @@
 import React from 'react';
 
-import SectionName from '../../components/SectionName/SectionName';
+import Section from '../../components/Section/Section';
 import Card from '../../components/Card/Card';
 
-import classes from './Skills.module.css';
+import classes from './Skills.module.scss';
 
-import tools from '../../assets/images/tools.png';
-import code from '../../assets/images/code.png';
-import other from '../../assets/images/other.png';
+import tools from '../../assets/icons/tools.png';
+import code from '../../assets/icons/code.png';
+import other from '../../assets/icons/other.png';
 
 const skills = () => {
     const toolsList = [
@@ -38,27 +38,27 @@ const skills = () => {
 
     return (
     	<section className = { classes.Skills }>
-    		<SectionName id = 'skills' name = 'My skillset' />
+    		<Section id = 'skills' name = 'My skillset' />
 
-            <p className = { classes.Description }>Below you will see the tools I use most often, front-end development skills I know, and other programming stuff I do. The list is constantly expanding as I enjoy learning new things :)</p>
+            <p className = { classes.Description }>Underneath are all the tools I use to make my projects, the key focal point being front-end development work. Other tools and programming languages have been included but are not my main focus at the moment. The list below details the specifics and is constantly growing.</p>
 
             <section className = { classes.Cards }>
                 <Card 
                     icon = { tools } 
                     name = 'Tools' 
-                    description = 'I value simple content structure, clean design patterns, and thoughtful interactions.' 
+                    description = 'I appreciate easy content structure, clear design patterns and friendly user interations.' 
                     list = { toolsList } />
                     
                 <Card 
                     icon = { code } 
                     name = 'Front-end' 
-                    description = 'I like to code things from scratch, and enjoy bringing ideas to life in the browser.' 
+                    description = 'I like coding from the ground up and introducing new ideas onto the web page.' 
                     list = { codeList } />
                     
                 <Card 
                     icon = { other } 
                     name = 'Other' 
-                    description = 'I keep learning and challenging myself in different areas. These are my other technical skills.' 
+                    description = 'I keep learning and challenging myself in different areas to make myself versatile in other technical skills.' 
                     list = { otherList } />
             </section>
     	</section>

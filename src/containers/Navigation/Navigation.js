@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import classes from './Navigation.module.css';
+import classes from './Navigation.module.scss';
 
 import Logo from '../../components/Logo/Logo';
 
-import menuIcon from '../../assets/images/menu.png';
-import closeIcon from '../../assets/images/close.png';
+import menuIcon from '../../assets/icons/menu.png';
+import closeIcon from '../../assets/icons/close.png';
 
 class Navigation extends Component {
     state = {
@@ -29,11 +29,7 @@ class Navigation extends Component {
 
     render () {
         return (
-            <section className = { [classes.Navigation, 
-                                    this.state.scrolled ? classes.Scrolled : null,
-                                    this.state.navIsOpen ? classes.Module : null]
-                                .join(' ') }>
-
+            <section className = { [classes.Navigation, this.state.scrolled ? classes.Scrolled : null, this.state.navIsOpen ? classes.Module : null].join(' ') }>
                 <div className = { [classes.NavBar, this.state.scrolled ? classes.Scroll : classes.NotScroll].join(' ') }>
                     <Logo />
                     <button onClick = { this.onMenuClick } className = { classes.Hamburger }>

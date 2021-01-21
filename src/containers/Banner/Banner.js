@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Banner.module.css';
+import classes from './Banner.module.scss';
 
 const banner = () => {
     return (
@@ -7,13 +7,13 @@ const banner = () => {
             <div className = { classes.RightSlide } />
 
             <div className = { classes.Welcome }>
-                <h1 className = { classes.Hey }>Hey</h1>
-                <h1 className = { classes.There }>there</h1>
+                <div className = { classes.HeyBox }><h1 className = { classes.Hey }>Hi</h1></div>
+                <div className = { classes.ThereBox }><h1 className = { classes.There }>there</h1></div>
             </div>
 
             <div className = { classes.Bio }>
                 <h2>Nice to meet you</h2>
-                <p>I am a front-end web developer and I enjoy what I do :)<br/>I would like to take you on my journey, tell you a little about myself<br/>and showcase some of my latest projects I've done!</p>
+                <p>I am a front-end web developer who takes pride in what I do.<br/>I would like to tell you a little about myself and walk you through my latest work while showcasing you some of my best projects.</p>
             </div>
 
             <a href = '#about' className = { classes.Scroll }>

@@ -1,18 +1,18 @@
 import React from 'react';
 
-import SectionName from '../../components/SectionName/SectionName';
+import Section from '../../components/Section/Section';
 import Line from '../../components/Line/Line';
 
-import email from '../../assets/images/email.png';
-import github from '../../assets/images/github.png';
-import linkedin from '../../assets/images/linkedin.png';
+import email from '../../assets/icons/email.png';
+import github from '../../assets/icons/github.png';
+import linkedin from '../../assets/icons/linkedin.png';
 
-import classes from './Contact.module.css';
+import classes from './Contact.module.scss';
 
 const contact = () => {
     return (
     	<section className = { classes.Contact }>
-            <SectionName id = 'contact' name = 'Get in touch' />
+            <Section id = 'contact' name = 'Get in touch' />
 
             <div className = { classes.Content }>
                 <h1 className = { classes.Promo }>Let's build something great together!</h1>
