@@ -19,7 +19,7 @@ const portfolio = () => {
 
             <Project 
                 icon = { finchRobot } 
-                about = "The Finch is a robot that responds to light, temperature, obstacles, and touch. I was very intrigued about the capabilities of a machine carrying out a complex series of actions. Thus, I wrote a program for the Finch to follow a movement command based on a user's input. This meant the Finch could even draw zigzags/shapes."
+                about = "The Finch is a robot that responds to light, temperature, obstacles, and touch. Thus, I wrote a program for the Finch robot to follow a movement command, based on a user's input. This meant the Finch could even draw shapes such as squares, circles, and zig-zags."
                 built = { ['Java', 'Eclipse', 'Finch', 'Swing Toolkit'] } />
                 
             <Line />

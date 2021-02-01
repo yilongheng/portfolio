@@ -25,14 +25,14 @@ const skills = () => {
         'HTML5',
         'CSS3 (Sass)',
         'JavaScript (ES6)',
-        'ReactJS',
-        'Snoopy'
+        'ReactJS'
     ]
 
     const otherList = [
         'Swift',
         'Python',
-        'Visual Basic'
+        'Visual Basic',
+        'Snoopy'
     ]
 
     return (
