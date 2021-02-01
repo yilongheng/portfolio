@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b9f17a53.chunk.css",
-    "main.js": "/portfolio/static/js/main.e848f44c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.e848f44c.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.24f70b4b.chunk.css",
+    "main.js": "/portfolio/static/js/main.3b3e1f25.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3b3e1f25.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d5e12b6d.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d5e12b6d.js.map",
     "static/js/2.2d941f4c.chunk.js": "/portfolio/static/js/2.2d941f4c.chunk.js",
     "static/js/2.2d941f4c.chunk.js.map": "/portfolio/static/js/2.2d941f4c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.b9f17a53.chunk.css.map": "/portfolio/static/css/main.b9f17a53.chunk.css.map",
+    "static/css/main.24f70b4b.chunk.css.map": "/portfolio/static/css/main.24f70b4b.chunk.css.map",
     "static/js/2.2d941f4c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2d941f4c.chunk.js.LICENSE.txt",
-    "static/media/burgerbuilder.c5d30aa7.png": "/portfolio/static/media/burgerbuilder.c5d30aa7.png",
     "static/media/email.809c0545.png": "/portfolio/static/media/email.809c0545.png",
-    "static/media/journeyplanner.e046ff87.png": "/portfolio/static/media/journeyplanner.e046ff87.png"
+    "static/media/explosiveTrivia.4cf42eb8.jpg": "/portfolio/static/media/explosiveTrivia.4cf42eb8.jpg",
+    "static/media/finchRobot.79881f32.jpg": "/portfolio/static/media/finchRobot.79881f32.jpg",
+    "static/media/myJournal.180c3c98.jpg": "/portfolio/static/media/myJournal.180c3c98.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d5e12b6d.js",
     "static/js/2.2d941f4c.chunk.js",
-    "static/css/main.b9f17a53.chunk.css",
-    "static/js/main.e848f44c.chunk.js"
+    "static/css/main.24f70b4b.chunk.css",
+    "static/js/main.3b3e1f25.chunk.js"
   ]
 }
