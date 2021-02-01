@@ -21,7 +21,6 @@ const skills = () => {
 
     const codeList = [
         'Java',
-        'SQL',
         'HTML5',
         'CSS3 (Sass)',
         'JavaScript (ES6)',
@@ -32,7 +31,8 @@ const skills = () => {
         'Swift',
         'Python',
         'Visual Basic',
-        'Snoopy'
+        'Snoopy',
+        'SQL'
     ]
 
     return (
