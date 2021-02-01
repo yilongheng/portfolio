@@ -5,7 +5,7 @@ import classes from './Logo.module.scss';
 const logo = () => {
     return (
     	<a className = { classes.Logo } href = '#top'>
-            <span>VT</span>
+            <span>MH</span>
         </a>
     );
 }

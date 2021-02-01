@@ -8,14 +8,14 @@ import classes from './About.module.scss';
 const about = () => {
     return (
     	<section className = { classes.About }>
-    		<Section id = 'about' name = "Let's start!" />
+    		<Section id = 'about' name = "Let's Go!" />
 
 			<article className = { classes.Article }>
-				<h1>What I'm about</h1>
+				<h1>About Me</h1>
 				<Line />
-					<p>Curabitur venenatis convallis purus et tincidunt. Praesent elementum vitae libero eget suscipit. Phasellus a ipsum at eros maximus maximus eu ac sapien. Phasellus interdum enim risus, quis eleifend tortor faucibus quis.</p>
+					<p>I am a student undertaking a Bachelor’s degree in Computer Science at Brunel University with a predicted first class honours. But before coming to the UK, I grew up in Malaysia where I completed my pre-university studies and majored in Business and Psychology.</p>
 					<br/>
-					<p>Curabitur venenatis convallis purus et tincidunt. Praesent elementum vitae libero eget suscipit. Phasellus a ipsum at eros maximus maximus eu ac sapien. Phasellus interdum enim risus, quis eleifend tortor faucibus quis. Proin varius vulputate fringilla. Duis quis magna nisl. In porta arcu ut felis ultricies, sit amet imperdiet dolor ornare. Etiam varius lacus vel mauris viverra, vel hendrerit nisl vestibulum.</p>
+					<p>During my pre-university studies, I was learning how to code and develop simple java projects in my free time. When I graduated college in 2018, I discovered that my interests and passion lies within the technology industry.</p>
 				<Line />
 			</article>
     	</section>

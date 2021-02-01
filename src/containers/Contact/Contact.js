@@ -19,28 +19,28 @@ const contact = () => {
 
                 <Line />
 
-                <p className = { classes.Description }>I don't work for people, I collaborate with them.<br/>Sound like you? Let’s talk!</p>
-                <a href='mailto:justvladon@outlook.com' className = { classes.Email }>Contact</a>
+                <p className = { classes.Description }></p>
+                <a href='mailto:1928039@brunel.ac.uk' className = { classes.Email }>Contact</a>
                 <p className = { classes.Description }>or reach me out on</p>
 
                 <div className = { classes.Social }>
                     <ul>
                         <li>
-                            <a href='mailto:justvladon@outlook.com'><img src = { email } alt = '' /></a>
+                            <a href='mailto:1928039@brunel.ac.uk'><img src = { email } alt = '' /></a>
                             <p>Email</p>
                         </li>
                     </ul>
                     
                     <ul className = { classes.Social }>
                         <li>
-                            <a href = 'https://github.com/MiVladie/'><img src = { github } alt = '' /></a>
+                            <a href = 'https://github.com/yilongheng/'><img src = { github } alt = '' /></a>
                             <p>GitHub</p>
                         </li>
                     </ul>
                     
                     <ul className = { classes.Social }>
                         <li>
-                            <a href = 'https://linkedin.com/in/mivladie/'><img src = { linkedin } alt = '' /></a>
+                            <a href = 'https://www.linkedin.com/in/yilong-heng-861637166/'><img src = { linkedin } alt = '' /></a>
                             <p>LinkedIn</p>
                         </li>
                     </ul>

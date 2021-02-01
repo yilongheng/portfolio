@@ -4,8 +4,9 @@ import Section from '../../components/Section/Section';
 import Line from '../../components/Line/Line';
 import Project from '../../components/Project/Project';
 
-import burgerBuilder from '../../assets/projects/burgerbuilder.png';
-import journeyPlanner from '../../assets/projects/journeyplanner.png';
+import myJournal from '../../assets/projects/myJournal.jpg';
+import finchRobot from '../../assets/projects/finchRobot.jpg';
+import explosiveTrivia from '../../assets/projects/explosiveTrivia.jpg';
 
 import classes from './Portfolio.module.scss';
 
@@ -14,33 +15,26 @@ const portfolio = () => {
     	<section className = { classes.Portfolio }> 
             <Section id = 'portfolio' name = 'Projects' />
 
-            <p className = { classes.Description }>Below you will see the tools I use most often, front-end development skills I know, and other programming stuff I do. The list is constantly expanding as I enjoy learning new things :)</p>
-
-            <Line />
+            <p className = { classes.Description }></p>
 
             <Project 
-                icon = { journeyPlanner } 
-                about = 'Journey Planner for London allows you to find routes from entered location to the desired point. The user will be provided with all required instructions, bus/tube links, along with the map with visualised routes.'
-                built = { ['ReactJS', 'React Hooks', 'Google Maps API', 'TFL API'] }
-                github =  'https://github.com/MiVladie/journeyplanner'
-                online = 'https://mivladie.github.io/journeyplanner/' />
+                icon = { finchRobot } 
+                about = "The Finch is a robot that responds to light, temperature, obstacles, and touch. I was very intrigued about the capabilities of a machine carrying out a complex series of actions. Thus, I wrote a program for the Finch to follow a movement command based on a user's input. This meant the Finch could even draw zigzags/shapes."
+                built = { ['Java', 'Eclipse', 'Finch', 'Swing Toolkit'] } />
                 
             <Line />
 
             <Project 
-                icon = { burgerBuilder } 
-                about = 'A Burger Builder App is an application where user can design their custom burger using suggested ingredients and place an order. The data about the user and his order are then stored in a database.'
-                built = { ['ReactJS', 'Redux', 'React Hooks', 'Google Firebase'] }
-                github =  'https://github.com/MiVladie/burgerbuilder'
-                online = 'https://mivladie.github.io/burgerbuilder/' />
+                icon = { myJournal } 
+                about = "myJournal is an interactive web application that allows users to submit daily journal entries and answer short daily quizzes regarding their current mental state which will allow them to monitor their mental health over time."
+                built = { ['ReactJS', 'HTML5', 'CSS3 (Sass)','JavaScript (ES6)'] } />
                 
             <Line />
             
             <Project 
-                icon = '' 
-                about = 'Curabitur venenatis convallis purus et tincidunt. Praesent elementum vitae libero eget suscipit. Phasellus a ipsum at eros maximus maximus eu ac sapien.' 
-                built = '' 
-                view = '' />
+                icon = {explosiveTrivia} 
+                about = 'Explosive Trivia is an iOS app that I am currently developing. It is a trivia game where users have to answer questions within a certain timeframe and any incorrect or prolonged delays in answers will cause a ticking timebomb to explode.' 
+                built = { ['Swift', 'XCode'] }  />
     	</section>
     );
 }

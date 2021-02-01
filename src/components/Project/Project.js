@@ -20,12 +20,6 @@ const project = (props) => {
                 } 
                 </ul>      
             </div>
-            
-            <div className = { classes.Info }>
-                <h1 className = { classes.Title }>View on</h1>
-                <a className = { classes.Link } href = { props.github }>GitHub</a>  
-                <a className = { classes.Link } href = { props.online }>Online</a>            
-            </div>
     	</div>
     );
 }

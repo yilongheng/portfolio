@@ -12,53 +12,52 @@ import other from '../../assets/icons/other.png';
 const skills = () => {
     const toolsList = [
         'VS Code',
-        'Adobe Xd',
-        'Adobe Premier',
+        'Eclipse',
+        'GitHub',
+        'SPSS',
         'Photoshop',
         'Office 365'
     ]    
 
     const codeList = [
+        'Java',
+        'SQL',
         'HTML5',
         'CSS3 (Sass)',
         'JavaScript (ES6)',
-        'ReactJS (w/ Redux)',
-        'Databases / APIs',
-        'JSON / AJAX'
+        'ReactJS',
+        'Snoopy'
     ]
 
     const otherList = [
-        'Unity3D',
-        'C++ / C#',
-        'Java',
-        'Ecommerce',
-        'Facebook Ads',
-        'Google Adsense'
+        'Swift',
+        'Python',
+        'Visual Basic'
     ]
 
     return (
     	<section className = { classes.Skills }>
     		<Section id = 'skills' name = 'My skillset' />
 
-            <p className = { classes.Description }>Underneath are all the tools I use to make my projects, the key focal point being front-end development work. Other tools and programming languages have been included but are not my main focus at the moment. The list below details the specifics and is constantly growing.</p>
+            <p className = { classes.Description }></p>
 
             <section className = { classes.Cards }>
                 <Card 
                     icon = { tools } 
-                    name = 'Tools' 
-                    description = 'I appreciate easy content structure, clear design patterns and friendly user interations.' 
+                    name = "Tools & IDE's" 
+                    description = "Below I have listed the tools and IDE's that I utilize to develop my projects."
                     list = { toolsList } />
                     
                 <Card 
                     icon = { code } 
-                    name = 'Front-end' 
-                    description = 'I like coding from the ground up and introducing new ideas onto the web page.' 
+                    name = 'Programming Languages' 
+                    description = 'I enjoy coding from the ground up and developing projects in my free time. Below are the few programming languages that I am comfortable coding with.' 
                     list = { codeList } />
                     
                 <Card 
                     icon = { other } 
                     name = 'Other' 
-                    description = 'I keep learning and challenging myself in different areas to make myself versatile in other technical skills.' 
+                    description = 'As an individual that likes to take on challenges and engage in innovative projects, I always try to challenge myself to learn new programming languages.' 
                     list = { otherList } />
             </section>
     	</section>
