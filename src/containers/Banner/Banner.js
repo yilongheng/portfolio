@@ -13,7 +13,7 @@ const banner = () => {
 
             <div className = { classes.Bio }>
                 <h2>I am Marcus, nice to meet you!</h2>
-                <p>I am a passionate Software Engineer and Front-End Web Developer.
+                <p>I am a passionate Software and Front-End Web Developer.
                 <br/>
                 <br/>
                 Below I will tell you a little bit more about myself, guide you through my work experience, and showcase some of my projects that I have developed.</p>

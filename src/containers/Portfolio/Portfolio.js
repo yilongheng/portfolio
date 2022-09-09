@@ -32,9 +32,16 @@ const portfolio = () => {
             <Line />
             
             <Project 
-                icon = {explosiveTrivia} 
+                icon = { explosiveTrivia } 
                 about = 'Explosive Trivia is an iOS app that I am currently developing. It is a trivia game where users have to answer questions within a certain timeframe and any incorrect or prolonged delays in answers will cause a ticking timebomb to explode.' 
                 built = { ['Swift', 'XCode'] }  />
+
+             <Line />
+            
+            <Project 
+                icon = { detectiNav } 
+                about = 'DetectiNav is the project I developed for my Final Year Project at Brunel University. THe goal of the mobile application was to integrate an object detection system that will detect the surrounding obstacles of a visually impaired navigator and notify them of these obstructions.' 
+                built = { ['Java', 'Python', 'Android Studio', 'TensorFlow'] }  />
     	</section>
     );
 }

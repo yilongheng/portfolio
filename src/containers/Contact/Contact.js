@@ -20,13 +20,13 @@ const contact = () => {
                 <Line />
 
                 <p className = { classes.Description }></p>
-                <a href='mailto:1928039@brunel.ac.uk' className = { classes.Email }>Contact</a>
+                <a href='mailto:yilongheng@gmail.com' className = { classes.Email }>Contact</a>
                 <p className = { classes.Description }>or reach me out on</p>
 
                 <div className = { classes.Social }>
                     <ul>
                         <li>
-                            <a href='mailto:1928039@brunel.ac.uk'><img src = { email } alt = '' /></a>
+                            <a href='mailto:yilongheng@gmail.com'><img src = { email } alt = '' /></a>
                             <p>Email</p>
                         </li>
                     </ul>

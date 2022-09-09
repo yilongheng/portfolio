@@ -13,6 +13,7 @@ const skills = () => {
     const toolsList = [
         'VS Code',
         'Eclipse',
+        'Android Studio',
         'GitHub',
         'SPSS',
         'Photoshop',
@@ -24,7 +25,8 @@ const skills = () => {
         'HTML5',
         'CSS3 (Sass)',
         'JavaScript (ES6)',
-        'ReactJS'
+        'ReactJS',
+        'TensorFlow'
     ]
 
     const otherList = [
